@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/pp1.jpg">
+    <title>Contact - by JiwanDev</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="images/pp1.jpg" alt="Logo" class="logo-image">
+                    <span class="logo-text">Menu</span>
+                </a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+            </ul>
+
+            <!-- CTA Button -->
+            <div class="nav-cta">
+                <button class="cta-button" onclick="window.location.href='contact.html'">Get Started</button>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="nav-toggle" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Content -->
+    <section class="page-section">
+        <div class="content">
+            <h1>Contact Us</h1>
+            <p>Get in touch with our team</p>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3>📍 Address</h3>
+                        <p>123 Business Street<br>Jakarta, Indonesia 12345</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>📧 Email</h3>
+                        <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="11787f777e517363707f757f707c743f727e7c">[email&#160;protected]</a><br><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fd8e888d8d928f89bd9f8f9c9399939c9098d39e9290">[email&#160;protected]</a></p>
+                    </div>
+                    <div class="info-item">
+                        <h3>📞 Phone</h3>
+                        <p>+62 21 1234 5678<br>+62 812 3456 7890</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="watermark">by JiwanDev</div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

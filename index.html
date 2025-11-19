@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/pp1.jpg">
+    <title>Home - by JiwanDev</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="images/pp1.jpg" alt="Logo" class="logo-image">
+                    <span class="logo-text">Menu</span>
+                </a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <!-- CTA Button -->
+            <div class="nav-cta">
+                <button class="cta-button" onclick="window.location.href='contact.html'">Get Started</button>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="nav-toggle" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to JiwanDev</h1>
+            <p class="hero-subtitle">We create amazing digital experiences that transform businesses</p>
+            <div class="hero-buttons">
+                <button class="hero-btn primary" onclick="window.location.href='services.html'">Our Services</button>
+                <button class="hero-btn secondary" onclick="window.location.href='contact.html'">Contact Us</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="content">
+            <h2>Why Choose Us</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast Performance</h3>
+                    <p>Lightning-fast load times and optimal performance</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Modern Design</h3>
+                    <p>Beautiful, contemporary designs that stand out</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Fully Responsive</h3>
+                    <p>Perfect experience on all devices and screen sizes</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure & Reliable</h3>
+                    <p>Enterprise-grade security and 99.9% uptime</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="watermark">by JiwanDev</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
